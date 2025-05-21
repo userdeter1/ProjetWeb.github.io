@@ -36,7 +36,7 @@ body {
   font-weight: 500;
 }
 
-/* Bouton Contact */
+
 .navbar .btn {
   background: #f72585;
   padding: 10px 20px;
@@ -45,7 +45,7 @@ body {
   text-decoration: none;
 }
 
-/* Bulles avec animation */
+
 .navbar .btnn {
   background: #ff00ff;
   padding: 10px 20px;
@@ -58,9 +58,9 @@ body {
 }
 
 .navbar .btnn:hover {
-  background-color: #b5179e; /* couleur plus foncée au hover */
-  transform: translateY(-4px); /* effet d’élévation */
-  box-shadow: 0 0 15px #ff00ff; /* glow néon */
+  background-color: #b5179e; 
+  transform: translateY(-4px); 
+  box-shadow: 0 0 15px #ff00ff; 
 }
 
 .hero {
@@ -362,7 +362,7 @@ footer {
 .blog-subtitle {
   font-size: 28px;
   font-style: italic;
-  color: #ec4899; /* rose vif */
+  color: #ec4899; 
   margin-bottom: 40px;
   text-align: center;
 }
@@ -457,7 +457,7 @@ footer {
   margin-bottom: 20px;
 }
 .services-header {
-  padding-top: 80px; /* ajuste la valeur selon le besoin */
+  padding-top: 80px; 
   text-align: center;
 }
 
@@ -502,35 +502,35 @@ footer {
 }
 .delivery-section {
   display: flex;
-  align-items: center; /* Centrage vertical des éléments */
-  justify-content: center; /* Centrage horizontal des éléments */
-  background-color: #ffffff; /* Fond blanc */
-  padding: 40px; /* Espacement intérieur */
-  max-width: 900px; /* Largeur maximale de la section */
-  margin: 40px auto; /* Centrage de la section et espacement */
-  border-radius: 10px; /* Bords arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  align-items: center; 
+  justify-content: center;
+  background-color: #ffffff; 
+  padding: 40px; 
+  max-width: 900px; 
+  margin: 40px auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .delivery-image {
-  flex: 1; /* Prend 1 part de l'espace disponible */
-  text-align: center; /* Centre l'image horizontalement */
-  margin-right: 20px; /* Espacement à droite de l'image */
+  flex: 1; 
+  text-align: center; 
+  margin-right: 20px; 
 }
 
 .delivery-image img {
-  max-width: 100%; /* L'image ne dépasse pas la largeur de son conteneur */
+  max-width: 100%; 
   height: auto;
 }
 
 .delivery-text {
-  flex: 1; /* Prend 1 part de l'espace disponible */
-  text-align: left; /* Aligne le texte à gauche */
+  flex: 1; 
+  text-align: left; 
 }
 
 .delivery-text h2 {
-  color: #000000; /* Couleur du titre */
-  margin-bottom: 15px; /* Espacement sous le titre */
+  color: #000000; 
+  margin-bottom: 15px; 
 }
 
 .delivery-text p {
@@ -541,13 +541,13 @@ footer {
 
 @media screen and (max-width: 600px) {
   .delivery-section {
-    flex-direction: column; /* Empile les éléments verticalement */
-    text-align: center; /* Centre le texte */
+    flex-direction: column; 
+    text-align: center; 
   }
 
   .delivery-image {
-    margin-right: 0; /* Supprime l'espacement à droite */
-    margin-bottom: 20px; /* Ajoute de l'espacement sous l'image */
+    margin-right: 0; 
+    margin-bottom: 20px; 
   }
 
   .delivery-text {
@@ -574,8 +574,8 @@ footer {
     margin: 40px auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Important pour le positionnement du dégradé */
-    overflow: hidden;   /* Important pour cacher le débordement du dégradé */
+    position: relative; 
+    overflow: hidden;   
 }
 
 .why-our-agency > h2 {
@@ -588,17 +588,17 @@ footer {
     padding: 0;
     border-radius: 0;
     box-shadow: none;
-    color: white; /* La couleur de base reste blanche */
-    display: inline-block; /* Nécessaire pour le masquage */
+    color: white; 
+    display: inline-block; 
 }
 
 .why-our-agency span {
-    background: linear-gradient(to right, cyan, magenta); /* Le dégradé */
-    -webkit-background-clip: text; /* Le dégradé est "coupé" par le texte */
-    color: transparent; /* Le texte devient transparent */
-    display: inline-block; /* Nécessaire pour le masquage */
-    position: relative; /* Pour contrôler le positionnement (si nécessaire) */
-    z-index: 1;      /* Pour être sûr qu'il est au-dessus du fond violet */
+    background: linear-gradient(to right, cyan, magenta); 
+    -webkit-background-clip: text; 
+    color: transparent;
+    display: inline-block; 
+    position: relative; 
+    z-index: 1;      
 }
 
 .why-our-agency-content {
@@ -613,6 +613,118 @@ footer {
     margin-bottom: 15px;
 }
 .delivery-text p {
-    color: #666666; /* Ou toute autre couleur que vous souhaitez */
+    color: #666666; 
     line-height: 1.6;
 }
+
+.title-container {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #007cf0, #00dfd8, #ff0080) 1;
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 223, 216, 0.2);
+  backdrop-filter: blur(4px); 
+  animation: pulse-border 5s infinite alternate;
+}
+
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 223, 216, 0.6);
+  }
+}
+
+/* Titre principal */
+.services-title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #007cf0, #00dfd8, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.float-effect {
+  display: inline-block;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+
+@keyframes pulse-border {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 223, 216, 0.6);
+  }
+}
+
+.services-title {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #007cf0, #00dfd8, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.float-glow {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 6px #00dfd8;
+  }
+  50% {
+    text-shadow: 0 0 12px #ff0080;
+  }
+}
+.title-container {
+  margin: 0 auto;              
+  display: block;
+  padding: 20px 40px;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #00f0ff, #ff007a) 1;
+  box-shadow: 0 0 25px rgba(0, 0, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.02);
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 70px;          
+}
+
+
