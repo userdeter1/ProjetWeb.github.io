@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="C.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
 </head>
 <body>
@@ -26,6 +28,7 @@
       <a class="btnn" href="#contact">Contact</a>
     </nav>
     <div class="hero">
+      <div id="vanta-background"></div>
       <h1 class="fade-text">Design, <br> Development & <br> <span class="highlight">Digital Marketing</span></h1>
       <p class="fade-text">We will help you get more business</p>
       <form class="consultation-form fade-text">
@@ -33,7 +36,17 @@
         <input type="email" placeholder="Email" />
         <button type="submit">Login</button>
       </form>
+  <div class="section-divider">
+  <div class="section-scroll-indicator">
+    <div class="section-scroll-text">Scrollez Pour Démarrer</div>
+    <div class="section-scroll-arrow">
+      <div class="section-scroll-dot"></div>
     </div>
+  </div>
+</div>
+
+    </div>
+    
   </header>
 
  <section class="services-header" id="Services">
@@ -111,15 +124,13 @@
     </div>
   </div>
 </section>
-<section class="Blog" id="Blog" id="Blog"></section>
-<div class="title-container">
-  <h2 class="services-title">
-    Latest Blog Posts<br>
-    <span class="gradient-text float-effect">Articles</span>
-  </h2>
-</div>
-
-
+<section class="blog-section" id="Blog">
+  <div class="title-container">
+    <h2 class="services-title">
+      Latest Blog Posts<br>
+      <span class="gradient-text float-effect">Articles</span>
+    </h2>
+  </div>
 
   <div class="blog-grid">
     <!-- Article 1 -->
@@ -178,7 +189,7 @@
 
   
   </section>
-  <!-- ======= CONTACT SECTION ======= -->
+  
   <section class="contact" id="contact">
   <h2><i class="fas fa-envelope"></i> Contact Us</h2>
 
@@ -202,7 +213,26 @@
 <footer style="text-align: center; padding: 20px; background-color: #1e1e1e; color: white;">
   <p>© Our Agency - Powered by Neon Works</p>
 </footer>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    VANTA.NET({
+      el: "#vanta-background",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fff00,       
+      backgroundColor: 0x10002b,  
+      points: 12,            
+      maxDistance: 25.00,    
+      spacing: 16.00,        
+      showDots: true         
+    });
+  });
+</script>
 
 
 </body>
