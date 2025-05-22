@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #10002b, #240046);
   color: white;
   overflow-x: hidden;
@@ -68,7 +68,7 @@ header {
 }
 
 .navbar .btn {
-  background: #f72585;
+  background: #ffffff;
   padding: 10px 20px;
   border-radius: 30px;
   color: rgb(255, 255, 255);
@@ -76,15 +76,49 @@ header {
 }
 
 .navbar .btnn {
-  background: #ff00ff;
+  background: #ffffff;
   padding: 10px 20px;
   border-radius: 30px;
-  color: white;
+  color: #240046;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
 }
+.nav-chip {
+  padding: 20px;
+  background: #10002b;
+  text-align: center;
+}
+
+.chip-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 0;
+  border-radius: 9999px;
+}
+
+.chip-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.chip-link:hover {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .navbar .logo img {
   height: 40px;
   display: block;
@@ -92,9 +126,9 @@ header {
 
 
 .navbar .btnn:hover {
-  background-color: #b5179e; 
+  background-color: #66ade2; 
   transform: translateY(-4px); 
-  box-shadow: 0 0 15px #ff00ff; 
+  box-shadow: 0 0 15px #66ade2; 
 }
 
 .hero {
@@ -189,7 +223,7 @@ header {
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  background: #00f0ff;
+  background: #66ade2;
   color: #000;
   font-weight: bold;
   cursor: pointer;
@@ -249,8 +283,8 @@ footer {
 }
 .logo-img {
   height: 40px;
-  margin-left: 50px;  
-  margin-top: 10px;    
+  margin-left: 100px;  
+  margin-top: 20px;    
 }
 
 
@@ -367,6 +401,7 @@ footer {
   padding: 60px 30px;
   text-align: center;
   font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .testimonials-title {
@@ -400,6 +435,7 @@ footer {
   max-width: 500px;
   text-align: left;
   transition: transform 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 .testimonial-card:hover {
@@ -433,7 +469,7 @@ footer {
   line-height: 1.6;
   color: #222;
   position: relative;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .quote-mark {
@@ -441,15 +477,16 @@ footer {
   color: #e91e63;
   margin-right: 6px;
   vertical-align: middle;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .blog-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center; 
+
 }
 
 
@@ -499,6 +536,7 @@ footer {
   transition: transform 0.2s ease;
   max-width: 350px; 
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .blog-card:hover {
@@ -566,11 +604,14 @@ footer {
   font-size: 1.5em;
   margin-bottom: 10px;
   font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 .service-overlay p {
   font-size: 1em;
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 .services {
@@ -583,6 +624,7 @@ footer {
 .services-header {
   padding-top: 80px; 
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .services-header h2 {
@@ -765,7 +807,7 @@ footer {
   color: white;
   text-align: center;
   margin: 0;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .gradient-text {
@@ -822,3 +864,4 @@ footer {
     margin-top: 15px;
   }
 }
+
