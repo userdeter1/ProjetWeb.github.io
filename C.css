@@ -89,6 +89,7 @@ header {
   padding: 20px;
   background: #10002b;
   text-align: center;
+  gap: 60px;
 }
 
 .chip-link {
@@ -101,6 +102,7 @@ header {
   transition: all 0.3s ease;
   padding: 0;
   border-radius: 9999px;
+  gap: 60px;
 }
 
 .chip-link::before {
